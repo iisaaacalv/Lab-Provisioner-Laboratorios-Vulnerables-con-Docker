@@ -1,0 +1,25 @@
+# Puerto no estándar — el alumno debe encontrarlo con nmap
+Port 45768
+
+# Solo permitimos login con contraseña (no con claves SSH)
+PasswordAuthentication yes
+
+# Permitimos que root NO pueda loguearse directamente
+# (buena práctica y hace el lab más realista)
+PermitRootLogin no
+
+# Aquí está el truco: el banner.
+# SSH mostrará el contenido de este archivo ANTES de pedir contraseña.
+# El alumno verá el nombre de usuario aquí.
+Banner /etc/ssh/banner.txt
+
+# Ruta donde están las claves del host (generadas automáticamente)
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+
+# Reducimos intentos de autenticación para que no sea demasiado rápido
+# con fuerza bruta masiva, pero sí funcional con herramientas estándar
+MaxAuthTries 10
+
+# Tiempo de gracia para autenticarse
+LoginGraceTime 30
