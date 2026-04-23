@@ -1,1 +1,0 @@
-you know, ssh banner leak is real danger

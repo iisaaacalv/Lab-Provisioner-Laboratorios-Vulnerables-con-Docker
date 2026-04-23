@@ -1,1 +1,0 @@
-FINDing a high perm SUID can be easy, if you know how to look for them
