@@ -77,7 +77,8 @@ lab-provisioner/
 │   │   │   ├── config/
 │   │   │   │   └── sshd_config
 │   │   │   └── files/
-│   │   │       └── flag.txt
+│   │   │       ├── flag.txt
+|   |   |       └── banner.txt
 │   │   │
 │   │   └── lab2-suid/           # Lab 2: Escalada de privilegios SUID
 │   │       ├── Dockerfile
@@ -95,7 +96,7 @@ lab-provisioner/
 │           └── files/
 │               ├── index.php
 │               ├── upload.php
-│               └── .flag
+│               └── flag.txt
 │
 └── docs/                        # Guías de uso por laboratorio
     ├── GUIDE_lab1.md
