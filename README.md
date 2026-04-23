@@ -67,7 +67,7 @@ sudo systemctl enable --now docker
 lab-provisioner/
 │
 ├── README.md                    # Este archivo
-├── launch.sh                    # Script maestro para lanzar cualquier lab
+├── launch.sh                    # Script maestro para lanzar cualquier lab (NO DISPONIBLE AÚN)
 │
 ├── labs/
 │   ├── basic/                   # 🟢 Laboratorios de nivel básico
